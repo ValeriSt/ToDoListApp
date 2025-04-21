@@ -1,13 +1,21 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="./src/styles/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <div class="input-group">
+      <input type="text" id="task-input" placeholder="Enter a task..." />
+      <button id="add-btn">Add</button>
+    </div>
+    <ul id="task-list"></ul>
+    <button id="toggle-theme">Toggle Theme</button>
+  </div>
+  <script src="./src/script.js"></script>
+</body>
 </html>
